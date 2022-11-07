@@ -1,4 +1,4 @@
-const Player =({song, onNext, onPrev, onLoadedData, onPlayPause, onRandom, onRange}) => {
+const Player =({song, onNext, onPrev, onLoadedData, onPlayPause, onRandom, onRange, isPlay}) => {
     return(
         <div className="player-control">
             <div className="author">
@@ -20,7 +20,8 @@ const Player =({song, onNext, onPrev, onLoadedData, onPlayPause, onRandom, onRan
                         <i className="fas fa-step-backward"></i>
                     </button>
                     <button className="btn" onClick={onPlayPause}>
-                        <i className="fas fa-play"></i>
+                        {/* <i className="fas fa-play"></i> */}
+                        {isPlay ? <i class="fas fa-pause"></i> : <i className="fas fa-play"></i>}
                     </button>
                     <button className="btn" onClick={onNext}>
                         <i className="fas fa-step-forward"></i>
@@ -37,7 +38,10 @@ const Player =({song, onNext, onPrev, onLoadedData, onPlayPause, onRandom, onRan
                     <p className="time-end">2:00</p>
                 </div>
             </div>
-            <div className="volume">Volume</div>
+            <div className="volume">
+                Volume
+                <i class="fas fa-volume-up"></i>
+            </div>
             
             
         </div>
@@ -124,7 +128,7 @@ function App(){
     return (
         <div className="section-songs">
             <audio ref={songRef}  src={song.path} onLoadedData={handleLoadedData}></audio>
-            <Player song={song} onPrev={handlePrev} onNext={handleNext} onPlayPause={handlePausePlayClick } onRandom={handleRandom}  onRange={HandleRange} />
+            <Player song={song} isPlay={isPlay} onPrev={handlePrev} onNext={handleNext} onPlayPause={handlePausePlayClick } onRandom={handleRandom}  onRange={HandleRange} />
         </div>
     )
 }
