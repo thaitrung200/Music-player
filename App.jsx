@@ -7,8 +7,8 @@ const Player =({song, onNext, onPrev, onLoadedData, onPlayPause, onRandom, onRan
                 </div>
 
                 <div className="author-info">
-                    <h4 className="author-singer">{song.singer}</h4>
                     <div className="author-name">{song.name}</div>
+                    <h4 className="author-singer">{song.singer}</h4>
                 </div>
             </div>
             <div className="controls">
@@ -37,7 +37,7 @@ const Player =({song, onNext, onPrev, onLoadedData, onPlayPause, onRandom, onRan
                     <p className="time-end">2:00</p>
                 </div>
             </div>
-            <div className="volume">Volume <i class="fas fa-volume"></i></div>
+            <div className="volume">Volume</div>
             
             
         </div>
@@ -56,7 +56,7 @@ function App(){
         {
             name: "Nevada",
             singer: "Vicetone",
-            path: "https://mp3-s1-m-zmp3.zmdcdn.me/1d9de0bd79f990a7c9e8/1660985765828162804?authen=exp=1667790268~acl=/1d9de0bd79f990a7c9e8/*~hmac=e6ee687637ab78df15e88619a4c9960f",
+            path: "https://mp3-320s1-m-zmp3.zmdcdn.me/16083b6ffc2815764c39/8577880872573508685?authen=exp=1667974431~acl=/16083b6ffc2815764c39/*~hmac=910dc4f6e9f06861b3cc604768ac86f6",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR578VeoAPl1F6cfgzvh2ngHFjrDcNSReZ5QNEux3b7rg&s"
         },
         {
