@@ -71,6 +71,18 @@ function App(){
             path: "https://mp3-320s1-m-zmp3.zmdcdn.me/cd2d2a82fac613984ad7/74091051395827918?authen=exp=1667819015~acl=/cd2d2a82fac613984ad7/*~hmac=a733bb85501d3b33bda8d4723fdcc7fa",
             image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_webp/covers/f/8/f8af1ec869232da2460fd5f8eb09bb21_1475225520.jpg"
         },
+        {
+            name: "Reality",
+            singer: "Lost Frequencies",
+            path: "https://mp3-320s1-m-zmp3.zmdcdn.me/5826ce4d64098d57d418/1529052981641126190?authen=exp=1667982535~acl=/5826ce4d64098d57d418/*~hmac=22c183848e94f8af99229b007f1fb6f2",
+            image: "https://photo-resize-zmp3.zmdcdn.me/w165_r1x1_png/avatars/c/7/c7adb27c2df9dd8001dddf9b16bd62d7_1460436708.png"
+        },
+        {
+            name: "That Girl",
+            singer: "Olly Murs",
+            path: "https://mp3-320s1-m-zmp3.zmdcdn.me/5f34da9853dfba81e3ce/4513705979967084911?authen=exp=1667983217~acl=/5f34da9853dfba81e3ce/*~hmac=458cf53768691cc14563b8c0a58da645",
+            image: "https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_webp/avatars/0/7/6/3/0763f5cb0337c2d5d71c4133c8f589c7.jpg"
+        },
     ]
 
     const handleLoadedData = () => {
